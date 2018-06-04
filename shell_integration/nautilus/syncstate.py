@@ -178,7 +178,7 @@ class SocketConnect(GObject.GObject):
 socketConnect = SocketConnect()
 
 
-class MenuExtension(GObject.GObject, Nautilus.MenuProvider):
+class MenuExtension_ownCloud(GObject.GObject, Nautilus.MenuProvider):
     def __init__(self):
         GObject.GObject.__init__(self)
 
@@ -346,7 +346,7 @@ class MenuExtension(GObject.GObject, Nautilus.MenuProvider):
         socketConnect.sendCommand(action + ":" + filename + "\n")
 
 
-class SyncStateExtension(GObject.GObject, Nautilus.InfoProvider):
+class SyncStateExtension_ownCloud(GObject.GObject, Nautilus.InfoProvider):
     def __init__(self):
         GObject.GObject.__init__(self)
 
